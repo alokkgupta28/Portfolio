@@ -181,14 +181,16 @@ export function Certifications() {
               </div>
               {active.file && !errored && (
                 <div className="border-t hairline p-3 text-right">
-                  <a
-                    href={active.file}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.open(active.file, '_blank', 'noopener,noreferrer');
+                    }}
                     className="inline-flex items-center gap-1 font-mono text-xs uppercase tracking-widest hover:text-[color:var(--primary)]"
                   >
                     Open in new tab <ExternalLink className="h-3 w-3" />
-                  </a>
+                  </button>
                 </div>
               )}
             </motion.div>
