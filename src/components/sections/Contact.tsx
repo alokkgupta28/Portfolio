@@ -94,7 +94,7 @@ export function Contact() {
               <li key={s.label} className="border-b hairline">
                 <a
                   href={s.href}
-                  target={s.href.startsWith("http") ? "_blank" : undefined}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-baseline justify-between py-5 transition-colors hover:text-[color:var(--primary)]"
                 >

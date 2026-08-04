@@ -83,6 +83,8 @@ export function Footer() {
             <li>
               <a
                 href="mailto:alokkkumargupta863@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 hover:text-[color:var(--primary)] transition-colors"
               >
                 <Mail className="h-3.5 w-3.5" /> Email
